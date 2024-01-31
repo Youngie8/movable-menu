@@ -1,0 +1,116 @@
+body, html {
+    padding: 0%;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+nav {
+    background-color: #000;
+    color: #fff;
+}
+/* CLASSES */
+.container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+/* nav */
+.top, .bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    box-shadow:   0px 0px 5px 5px rgb(180, 180, 180);
+    height: 60px;
+}
+.left, .right {
+    height: 100%;
+    width: 30%;
+    text-align: center;
+}
+/* h2 */
+.nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-header span {
+    color: rgb(180, 180, 180);
+    font-size: 40px;
+}
+.nav-header span:hover{
+    color: yellow;
+}
+/* ul */
+.nav-links {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.top .nav-links, .bottom.nav-links {
+    height:100%;
+    flex-direction: row;
+}
+.left .nav-links, .right .nav-links {
+    width: 100%;
+    flex-direction: column;
+    margin: 50px 0;
+}
+/* li */
+.top .nav-links li, .bottom .nav-links li{
+    height: 100%;
+    padding: 0px 24px;
+}
+.left .nav-links li, .right .nav-links li{
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.nav-links li {
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+.nav-links li:hover {
+    background-color: rgba(180, 181, 180, 0.99);
+    font-weight: 700;
+}
+/* btn */
+button {
+    background: transparent;
+    padding: 8px 15px;
+    border: 2px dashed #fff;
+    color: rgb(238, 255, 0);
+    font-weight: 700;
+}
+button:hover {
+    border: 2px dashed red;
+    color: red;
+}
+/* positioning */
+.top{
+    position: absolute;
+    top: 0;
+}
+.bottom{
+    position: absolute;
+    bottom: 0;
+}
+.left {
+    position: absolute;
+    left: 0;
+}
+.right {
+    position: absolute;
+    right: 0;
+}
