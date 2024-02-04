@@ -54,7 +54,7 @@ nav {
     align-items: center;
     list-style: none;
 }
-.top .nav-links, .bottom.nav-links {
+.top .nav-links, .bottom .nav-links {
     height:100%;
     flex-direction: row;
 }

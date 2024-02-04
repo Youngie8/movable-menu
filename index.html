@@ -8,13 +8,13 @@
 </head>
 <body>
     <div class="container">
-        <nav class="top">
+        <nav class="top" id="nav">
             <h2 class="nav-header">My Website<span>!</span></h2>
             <ul class="nav-links">
-                <li class="topChange">top</li>
-                <li class="bottomChange">bottom</li>
-                <li class="leftChange">left</li>
-                <li class="rightChange">right</li>
+                <li class="topChange" onclick="changeOrientation('left')">top</li>
+                <li class="bottomChange" onclick="changeOrientation('bottom')">bottom</li>
+                <li class="leftChange" onclick="changeOrientation('left')">left</li>
+                <li class="rightChange" onclick="changeOrientation('right')">right</li>
             </ul>
             <button>Disappear</button>
         </nav>
