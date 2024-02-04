@@ -101,16 +101,67 @@ button:hover {
 .top{
     position: absolute;
     top: 0;
+    animation: topAnimation .6s ease-in;
 }
 .bottom{
     position: absolute;
     bottom: 0;
+    animation: bottomAnimation .6s ease-in;
 }
 .left {
     position: absolute;
-    left: 0;
+    animation: leftAnimation .6s ease-in;
 }
 .right {
     position: absolute;
     right: 0;
+    animation: rightAnimation .6s ease-in;
+}
+.disappear {
+    display: none;
+}
+/* ANIMATIONS */
+@keyframes topAnimation {
+    0%{
+        top: -100%
+    }
+    50%{
+        top: -50%
+    }
+    100%{
+        top: 0
+    }
+}
+@keyframes bottomAnimation {
+    0%{
+        bottom: -100%
+    }
+    50%{
+        bottom: -50%
+    }
+    100%{
+        bottom: 0
+    }
+}
+@keyframes rightAnimation {
+    0%{
+        right: -100%
+    }
+    50%{
+        right: -50%
+    }
+    100%{
+        right: 0
+    }
+}
+@keyframes leftAnimation {
+    0%{
+        left: -100%
+    }
+    50%{
+        left: -50%
+    }
+    100%{
+        left: 0
+    }
 }

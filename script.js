@@ -1,4 +1,7 @@
-function changeOrientation(arg) {
+let oldClass = "top"
+
+function changeOrientation(newClass) {
     const nav = document.querySelector('#nav');
-    nav.classList.replace("top", arg)
+    nav.classList.replace(oldClass, newClass);
+    oldClass = newClass;
 }
