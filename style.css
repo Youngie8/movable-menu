@@ -100,12 +100,10 @@ button:hover {
 /* positioning */
 .top{
     position: absolute;
-    top: 0;
     animation: topAnimation .6s ease-in;
 }
 .bottom{
     position: absolute;
-    bottom: 0;
     animation: bottomAnimation .6s ease-in;
 }
 .left {
