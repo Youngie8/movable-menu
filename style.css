@@ -104,6 +104,7 @@ button:hover {
 }
 .bottom{
     position: absolute;
+    bottom: 0;
     animation: bottomAnimation .6s ease-in;
 }
 .left {
